@@ -1,18 +1,17 @@
-/*
- * This is a simple Hello World in C++.
- * Note the header structure and files.
- * The only thing included in main.cpp is this main.h file.
- * main.h contains all directives for main.cpp
- */
+/***************************
+Name: Evan Soloway
+File: main.cpp
+Project: Hello World
+Purpose: This is a bare-bones Hello
+World intro program in C++. All directives
+(i.e. header and library imports, 'if' directives, etc)
+are ported over from "main.h".
+***************************/
 
-/* 
- * File:   main.h
- * Author: Alex Katrompas
- */
+#include "main.h"
 
-#ifndef HELLOWORLD_MAIN_H
-#define HELLOWORLD_MAIN_H
+int main(int argc, char** argv) {
+    std::cout << "Hello, World!" << std::endl;
 
-#include <iostream>
-
-#endif //HELLOWORLD_MAIN_H
+    return 0;
+}

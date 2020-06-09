@@ -1,19 +1,16 @@
-/*
- * This is a simple Hello World in C++.
- * Note the header structure and files.
- * The only thing included here is main.h
- * main.h contains all other directives
- */
+/***************************
+Name: Evan Soloway
+File: main.h
+Project: Hello World
+Purpose: This header file imports
+the iostream library on the condition
+that macroname HELLOWORLD_MAIN_H is
+not defined (ifndef).
+***************************/
 
-/* 
- * File:   main.cpp
- * Author: Alex Katrompas
- */
+#ifndef HELLOWORLD_MAIN_H
+#define HELLOWORLD_MAIN_H
 
-#include "main.h"
+#include <iostream>
 
-int main(int argc, char** argv) {
-    std::cout << "Hello, World!" << std::endl;
-
-    return 0;
-}
+#endif //HELLOWORLD_MAIN_H
