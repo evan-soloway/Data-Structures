@@ -3,11 +3,11 @@
 
 class DataRetrieve{
 	
-	TVhows();
-	~TVshows();
-	string getName();
-	int getRTscore();
-	int initialReleaseYear();
+	public:
+		
+		std::string provideName(std::string);
+		int provideRTscore(int);
+		int provide initialReleaseYear(int);
 	
 };
 
