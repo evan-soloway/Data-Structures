@@ -1,4 +1,0 @@
-
-#ifndef GLICKO.CPP
-
-#endif
