@@ -1,17 +1,27 @@
 /***************************
 Name: Evan Soloway
-File: main.cpp
+File: main.h
 Project: Hello World
-Purpose: This is a bare-bones Hello
-World intro program in C++. All directives
-(i.e. header and library imports, 'if' directives, etc)
-are ported over from "main.h".
+Purpose: 
 ***************************/
 
-#include "main.h"
+# ifndef MAIN_H
+# define MAIN_H
 
-int main(int argc, char** argv) {
-    std::cout << "Hello, World!" << std::endl;
+// user-defined headers/classes
+# include "Glicko.h"
+# include "ELO.h"
+# include "DataRetrieve.h"
 
-    return 0;
-}
+# include "Glicko.cpp"
+# include "ELO.cpp"
+# include "DataRetrieve.cpp"
+
+// Libraries
+
+# include <iostream>
+# include <iomanip>
+
+# endif
+
+

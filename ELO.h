@@ -1,7 +1,10 @@
-# ifndef ELO.h
-# define ELO.h
+# ifndef ELO_h
+# define ELO_h
 
-class ELO : public Films{
+# include <iostream>
+# include <iomanip>
+
+class ELO{
 	
 	~ELO();
 	

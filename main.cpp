@@ -1,16 +1,9 @@
 /***************************
 Name: Evan Soloway
-File: main.h
+File: main.cpp
 Project: Hello World
-Purpose: This header file imports
-the iostream library on the condition
-that macroname HELLOWORLD_MAIN_H is
-not defined (ifndef).
+Purpose: 
 ***************************/
 
-#ifndef HELLOWORLD_MAIN_H
-#define HELLOWORLD_MAIN_H
+# include "Program.h"
 
-#include <iostream>
-
-#endif //HELLOWORLD_MAIN_H

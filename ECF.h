@@ -1,7 +1,10 @@
-# ifndef ECF.H
-# define ECF.H
+# ifndef ECF_H
+# define ECF_H
 
-class ECF{
+# include "ELO.h"
+# include "ELO.cpp"
+
+class ECF : public ELO{
 	
 	~ECF();
 	
