@@ -9,16 +9,14 @@ Purpose:
 # define MAIN_H
 
 // user-defined headers/classes
-# include "Glicko.h"
+# include "ECF.h"
 # include "ELO.h"
-# include "DataRetrieve.h"
 
-# include "Glicko.cpp"
+// Windows-exclusive imports
+# include "ECF.h"
 # include "ELO.cpp"
-# include "DataRetrieve.cpp"
 
 // Libraries
-
 # include <iostream>
 # include <iomanip>
 

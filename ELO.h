@@ -1,19 +1,20 @@
 # ifndef ELO_h
 # define ELO_h
 
-# include <iostream>
-# include <iomanip>
+# include <cmath>
+# include <math.h>
+# include "ECF.h"
+# include "ECF.cpp" // remove for linux
 
-class ELO{
+class ELO: private ECF{
 	
 	~ELO();
 	
+	double winProbability=0;
+	
 	public:
 	
-	getRatingsDeviation();
-	getOppenentRatings();
-	getOpponentDeviations();
-	getRating();
+	double getWinProbability();
 	
 };
 

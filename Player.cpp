@@ -1,5 +1,3 @@
-#ifndef PLAYER_CPP
-
 # include "Player.h"
 
 // Constructors //
@@ -38,5 +36,3 @@ int provideCurrentRating(int){
 else if (ECF){return getRating(/*getECFRating*//*)}
 }
 */
-
-#endif
