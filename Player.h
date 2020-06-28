@@ -3,6 +3,7 @@
 
 # include <iostream>
 # include <iomanip>
+# include "Ratings.h"
 
 class Player{
 	
@@ -10,7 +11,8 @@ class Player{
 	std::string name = "Unnamed"; 
 	bool ELO = false, ECF = false;
 	
-	~Player();
+	ECF ecf;
+	ELO elo;
 	
 	public:
 		
@@ -19,9 +21,10 @@ class Player{
 		Player(std::string name, bool ELO, bool ECF);
 		
 		// Methods
-		std::string provideName(std::string);
-		const char* provideRatingType(); // Only 1 rating allowed per player
-		int provideCurrentRating(int);
+		std::string getName();
+		const char* getRatingType(); // Only 1 rating allowed per player
+		void provideRatingInfo(double, double);
+		int getRating();
 	
 };
 

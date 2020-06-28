@@ -11,10 +11,7 @@ Purpose:
 // user-defined headers/classes
 # include "ECF.h"
 # include "ELO.h"
-
-// Windows-exclusive imports
-# include "ECF.h"
-# include "ELO.cpp"
+# include "Player.h"
 
 // Libraries
 # include <iostream>

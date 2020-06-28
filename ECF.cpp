@@ -1,6 +1,6 @@
 # include "ECF.h"
 
-void ECF::provideOppenentRating(double rating){
+void ECF::provideOpponentRating(double rating){
 	opponentRating = rating;
 }
 

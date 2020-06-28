@@ -4,16 +4,14 @@
 # include <cmath>
 # include <math.h>
 # include "ECF.h"
-# include "ECF.cpp" // remove for linux
 
-class ELO: private ECF{
-	
-	~ELO();
+class ELO: public ECF{
 	
 	double winProbability=0;
 	
 	public:
 	
+	int getRating();
 	double getWinProbability();
 	
 };

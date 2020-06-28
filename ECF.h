@@ -6,8 +6,6 @@
 
 class ECF{
 	
-	~ECF();
-	
 	public:
 		
 	// class attributes made public so that inheriting classes can access them
@@ -24,7 +22,7 @@ class ECF{
 	*/
 	
 	/// Constructor functions
-	void provideOppenentRating(double rating);
+	void provideOpponentRating(double rating);
 	void providePlayerRating(double rating);
 	void provideResult(bool newResult);
 	/// Constructor functions

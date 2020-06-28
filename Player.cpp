@@ -5,7 +5,7 @@ Player::Player(){ // constructor which throws error if objects are not construct
 	throw "Necessary information for player not provided.";
 }
 
-Player::Player(std::string newName = "", bool newELO, bool newECF){
+Player::Player(std::string newName = "", bool newELO=false, bool newECF=false){
 	
 	if(newName==""){throw -1;}
 	
@@ -15,9 +15,9 @@ Player::Player(std::string newName = "", bool newELO, bool newECF){
 	
 }
 
-std::string Player::provideName(std::string){return name;}
+std::string Player::getName(){return name;}
 
-const char* Player::provideRatingType(){ 
+const char* Player::getRatingType(){ 
 if (ELO){return "ELO";}
 else if (ECF){return "ECF";}
 return "no rating has been selected";
@@ -25,14 +25,17 @@ return "no rating has been selected";
 
 /*
 I know that multiple returns in a method are sloppy, however, I've failed to perfect
-a way of constructing an instance of this class which would perfectly distinguish
-the chosen rating. 
+a way of constructing an instance of this class which would perfectly distinguish the chosen rating. 
+Finding an optimal solution would require too much time.
 */
 
-
-/*
-int provideCurrentRating(int){
-	if (ELO){return getRating(/*getEloRating*//*)}
-else if (ECF){return getRating(/*getECFRating*//*)}
+void Player::provideRatingInfo(double currentRating, double opponentRating){
+if (ELO){elo.providePlayerRating(currentRating); elo.provideOpponentRating(opponentRating);}
+else if (ECF){ecf.providePlayerRating(currentRating); ecf.provideOpponentRating(opponentRating);}
 }
-*/
+
+int Player::getRating(){
+if (ELO){return elo.getRating();}
+else if (ECF){return ecf.getRating();}
+return -1;
+}
