@@ -18,5 +18,3 @@ Purpose:
 # include <iomanip>
 
 # endif
-
-
