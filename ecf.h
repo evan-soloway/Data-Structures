@@ -3,13 +3,13 @@
 
 # include <iostream>
 # include <iomanip>
+# define DEVIATION 50
 
 class ECF{
 	
-	public:
+	protected:
 		
-	// class attributes made public so that inheriting classes can access them
-	double deviation = 50;
+	// changed to "protected" from "public"
 	double playerRating = 0;
 	double opponentRating = 0;
 	bool result = false;
@@ -21,6 +21,7 @@ class ECF{
 	these attributes.
 	*/
 	
+        public:
 	/// Constructor functions
 	void provideOpponentRating(double rating);
 	void providePlayerRating(double rating);

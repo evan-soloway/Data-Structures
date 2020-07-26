@@ -1,4 +1,4 @@
-# include "ECF.h"
+# include "ecf.h"
 
 void ECF::provideOpponentRating(double rating){
 	opponentRating = rating;
@@ -13,5 +13,5 @@ void ECF::provideResult(bool newResult){
 }
 
 int ECF::getRating(){
-	return opponentRating-deviation+(100*result);
+	return opponentRating-DEVIATION+(100*result);
 }

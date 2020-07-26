@@ -1,15 +1,17 @@
 # ifndef ELO_h
 # define ELO_h
 
+
 # include <cmath>
 # include <math.h>
 # include "ECF.h"
 
 class ELO: public ECF{
 	
-	double winProbability=0;
+        private:
+	double winProbability; // og initialized to 0
 	
-	public:
+	protected:
 	
 	int getRating();
 	double getWinProbability();

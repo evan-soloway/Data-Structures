@@ -14,10 +14,8 @@ class Player{
 	
 	public:
 		
-		// Constructors
 		Player(std::string name, bool newELO, bool newECF);
 		
-		// Methods
 		std::string getName();
 		const char* getRatingType(); // Only 1 rating allowed per player
 		void provideRatingInfo(double currentPlayer, double opponent);
