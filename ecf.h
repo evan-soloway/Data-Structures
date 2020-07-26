@@ -3,16 +3,16 @@
 
 # include <iostream>
 # include <iomanip>
-# define DEVIATION 50
+# define DEVIATION 50 // made this a constant; was variable
 
 class ECF{
 	
 	protected:
 		
-	// changed to "protected" from "public"
-	double playerRating = 0;
-	double opponentRating = 0;
-	bool result = false;
+	// changed to "protected" from "public"; moved declarations to constructor
+	double playerRating; 
+	double opponentRating; 
+	bool result; 
 	
 	/*
 	All attributes above made "double" so that algorithms 
@@ -22,6 +22,9 @@ class ECF{
 	*/
 	
         public:
+
+        ECF();
+
 	/// Constructor functions
 	void provideOpponentRating(double rating);
 	void providePlayerRating(double rating);

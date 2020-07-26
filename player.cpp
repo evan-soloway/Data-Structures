@@ -1,4 +1,4 @@
-# include "Player.h"
+# include "player.h"
 
 Player::Player(std::string newName = "", bool newELO=false, bool newECF=false){
 	
@@ -13,7 +13,7 @@ Player::Player(std::string newName = "", bool newELO=false, bool newECF=false){
 
 std::string Player::getName(){return name;}
 
-const char* Player::getRatingType(){ 
+std::string Player::getRatingType(){ 
 std::string ratingType = "no rating has been selected";
 if (elo){
 ratingType = "ELO";
@@ -25,17 +25,22 @@ ratingType = "ECF";
 return ratingType;
 }
 
-void Player::provideRatingInfo(double currentRating, double opponentRating){
+bool Player::provideRatingInfo(double currentRating, double opponentRating){
+
+bool success=false;
 
 if (elo){
 eloObject.providePlayerRating(currentRating); 
 eloObject.provideOpponentRating(opponentRating);
+success=true;
         }
 
 else if (ecf){
 ecfObject.providePlayerRating(currentRating); 
 ecfObject.provideOpponentRating(opponentRating);
+success=true;
         }
+return success;
 }
 
 int Player::getRating(){

@@ -1,13 +1,13 @@
 # ifndef PLAYER_H
 # define PLAYER_H
 
-# include "Ratings.h"
+# include "ratings.h"
 
 class Player{
 	
 	private: 
-	std::string name = "Unnamed"; 
-	bool elo = false, ecf = false;
+	std::string name; 
+	bool elo, ecf;
 	
 	ECF ecfObject;
 	ELO eloObject;
@@ -17,8 +17,8 @@ class Player{
 		Player(std::string name, bool newELO, bool newECF);
 		
 		std::string getName();
-		const char* getRatingType(); // Only 1 rating allowed per player
-		void provideRatingInfo(double currentPlayer, double opponent);
+		std::string getRatingType(); 
+		bool provideRatingInfo(double currentPlayer, double opponent);
 		int getRating();
 	
 };

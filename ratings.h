@@ -1,7 +1,7 @@
 # ifndef RATINGS_H
 # define RATINGS_H
 
-# include "ELO.h"
-# include "ECF.h"
+# include "elo.h"
+# include "ecf.h"
 
 # endif

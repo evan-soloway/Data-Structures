@@ -1,5 +1,13 @@
 # include "ecf.h"
 
+ECF::ECF(){
+
+opponentRating=0;
+playerRating=0;
+result=false;
+
+};
+
 void ECF::provideOpponentRating(double rating){
 	opponentRating = rating;
 }

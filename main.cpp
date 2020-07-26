@@ -19,7 +19,7 @@ std::cout << Vassily_Ivanchuk.getName() << std::endl;
 std::cout << Vassily_Ivanchuk.getRatingType() << std::endl;
 std::cout << Vassily_Ivanchuk.getRating() << std::endl;
 
-std::cout << "\n\n";
+std::cout << "\n";
 
 std::cout << Paul_Morphy.getName() << std::endl;
 std::cout << Paul_Morphy.getRatingType() << std::endl;

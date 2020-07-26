@@ -4,15 +4,16 @@
 
 # include <cmath>
 # include <math.h>
-# include "ECF.h"
+# include "ecf.h"
 
 class ELO: public ECF{
 	
         private:
-	double winProbability; // og initialized to 0
+	double winProbability; 
 	
-	protected:
+	public:
 	
+        ELO();
 	int getRating();
 	double getWinProbability();
 	

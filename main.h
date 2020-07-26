@@ -9,9 +9,9 @@ Purpose:
 # define MAIN_H
 
 // user-defined headers/classes
-# include "ECF.h"
-# include "ELO.h"
-# include "Player.h"
+# include "ecf.h"
+# include "elo.h"
+# include "player.h"
 
 // Libraries
 # include <iostream>
