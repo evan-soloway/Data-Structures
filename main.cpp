@@ -2,7 +2,7 @@
 Name: Evan Soloway
 File: main.cpp
 Project: Hello World
-Purpose: 
+Purpose: Tests Player class.
 ***************************/
 
 # include "main.h"

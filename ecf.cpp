@@ -1,3 +1,10 @@
+/***************************
+Name: Evan Soloway
+File: ecf.cpp
+Project: Hello World
+Purpose: Declares ECF class methods and constructor.
+***************************/
+
 # include "ecf.h"
 
 ECF::ECF(){

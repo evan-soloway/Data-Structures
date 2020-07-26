@@ -1,3 +1,10 @@
+/***************************
+Name: Evan Soloway
+File: elo.cpp
+Project: Hello World
+Purpose: Declares ELO class methods and constructor.
+***************************/
+
 # include "elo.h"
 
 ELO::ELO(){

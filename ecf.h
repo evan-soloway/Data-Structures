@@ -1,3 +1,10 @@
+/***************************
+Name: Evan Soloway
+File: ecf.h
+Project: Hello World
+Purpose: Prototypes ECF class
+***************************/
+
 # ifndef ECF_H
 # define ECF_H
 

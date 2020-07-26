@@ -1,3 +1,10 @@
+/***************************
+Name: Evan Soloway
+File: player.h
+Project: Hello World
+Purpose: Prototypes Player class. 
+***************************/
+
 # ifndef PLAYER_H
 # define PLAYER_H
 

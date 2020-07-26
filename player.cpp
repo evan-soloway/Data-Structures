@@ -1,3 +1,10 @@
+/***************************
+Name: Evan Soloway
+File: player.cpp
+Project: Hello World
+Purpose: Declares Player class methods and constructor.
+***************************/
+
 # include "player.h"
 
 Player::Player(std::string newName = "", bool newELO=false, bool newECF=false){

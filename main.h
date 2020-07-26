@@ -2,15 +2,15 @@
 Name: Evan Soloway
 File: main.h
 Project: Hello World
-Purpose: 
+Purpose: Includes all preprocessor 
+directives and library/file includes for main.h.
 ***************************/
 
 # ifndef MAIN_H
 # define MAIN_H
 
 // user-defined headers/classes
-# include "ecf.h"
-# include "elo.h"
+# include "ratings.h"
 # include "player.h"
 
 // Libraries
