@@ -3,7 +3,7 @@
 Player::Player(std::string newName = "", bool newELO=false, bool newECF=false){
 	
 	if(newName==""){throw -1;}
-        if((!newELO && !newECF) || (newELO && newECF)){throw -1;} // added this throw
+        if((!newELO && !newECF) || (newELO && newECF)){throw -1;} 
 	
 	name = newName;
 	elo = newELO;
@@ -28,6 +28,8 @@ return ratingType;
 bool Player::provideRatingInfo(double currentRating, double opponentRating){
 
 bool success=false;
+
+if(currentRating<200 || opponentRating<200){throw -1;} // throws error if ratings don't meet imagined US chess federation requirements
 
 if (elo){
 eloObject.providePlayerRating(currentRating); 
