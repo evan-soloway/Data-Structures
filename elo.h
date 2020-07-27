@@ -14,12 +14,11 @@ Purpose: Prototypes ELO class.
 
 class ELO: public ECF{
 	
-        private:
+    private:
 	double winProbability; 
 	
 	public:
-	
-        ELO();
+    ELO();
 	int getRating();
 	double getWinProbability();
 	

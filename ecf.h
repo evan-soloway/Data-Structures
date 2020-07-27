@@ -14,7 +14,7 @@ Purpose: Prototypes ECF class
 
 class ECF{
 	
-	protected:
+        protected:
 		
 	// changed to "protected" from "public"; moved declarations to constructor
 	double playerRating; 

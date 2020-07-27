@@ -24,9 +24,9 @@ void ECF::providePlayerRating(double rating){
 }
 
 void ECF::provideResult(bool newResult){
-	result = newResult;
+    result = newResult;
 }
 
 int ECF::getRating(){
-	return opponentRating-DEVIATION+(100*result);
+    return opponentRating-DEVIATION+(100*result);
 }
