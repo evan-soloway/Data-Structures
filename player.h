@@ -20,13 +20,12 @@ class Player{
 	ELO eloObject;
 	
 	public:
+    Player(std::string name, bool newELO, bool newECF);
 		
-		Player(std::string name, bool newELO, bool newECF);
-		
-		std::string getName();
-		std::string getRatingType(); 
-		bool provideRatingInfo(double currentPlayer, double opponent);
-		int getRating();
+std::string getName();
+    std::string getRatingType(); 
+    bool provideRatingInfo(double currentPlayer, double opponent);
+    int getRating();
 	
 };
 
